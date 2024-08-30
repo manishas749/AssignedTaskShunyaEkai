@@ -3,7 +3,14 @@
     <style name="Base.Theme.AssignedTasksShunyaEkai" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
 
+
+    </style>
+    <style name="progressDialog">
+        <item name="colorSecondary">@color/main_color</item>
+        <item name="colorControlActivated">@color/main_color</item>
+    </style>
     <style name="Theme.AssignedTasksShunyaEkai" parent="Base.Theme.AssignedTasksShunyaEkai" />
 </resources>
