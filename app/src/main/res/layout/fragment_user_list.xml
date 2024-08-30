@@ -12,6 +12,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F5F5"
     tools:context=".fragment.main.userList.UsersListFragment">
 
     <TextView
@@ -35,7 +36,11 @@
         android:id="@+id/recyclerView"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
         app:layout_constraintTop_toBottomOf="@id/text"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

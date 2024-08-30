@@ -10,10 +10,6 @@ import com.example.assignedtasksshunyaekai.repository.auth.AuthRepository
 class LoginViewModel(private val authRepository: AuthRepository) :ViewModel()
 {
     val userLiveData = MutableLiveData<DataState<User>>()
-    val loginResult = MutableLiveData<Boolean>()
-    val errorMessage = MutableLiveData<String>()
-
-
 
     fun onSignInClicked(email: String, password: String){
 

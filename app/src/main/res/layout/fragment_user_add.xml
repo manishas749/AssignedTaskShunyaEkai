@@ -2,8 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
 
-
+        <variable
+            name="viewModel"
+            type="com.example.assignedtasksshunyaekai.fragment.main.userAdd.UserAddViewModel" />
+    </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -141,7 +145,7 @@
                 android:backgroundTint="#4B7BE5"
                 android:fontFamily="@font/jost"
                 android:gravity="center"
-                android:onClick="@{() -> viewModel.onSignInClicked(emailid.getText().toString(), password.getText().toString())}"
+                android:onClick="@{() -> viewModel.onAddButtonClick(emailid.getText().toString(), password.getText().toString(),name.getText().toString())}"
                 android:text="@string/add"
                 android:textAlignment="center"
                 android:textAllCaps="false"
